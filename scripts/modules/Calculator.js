@@ -7,4 +7,16 @@ export class Calculator {
   plus() {
     return this.a + this.b;
   }
+
+  minus() {
+    return this.a - this.b
+  }
+
+  multiple() {
+    return this.a * this.b
+  }
+
+  divide() {
+    return this.a / this.b
+  }
 }

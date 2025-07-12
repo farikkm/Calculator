@@ -5,16 +5,142 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Work Sans";
   font-size: 16px;
+  background-color: #17171C;
+}
+
+button {
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  color: white;
+
+  border: none;
+  border-radius: 24px;
+
+  cursor: pointer;
 }
 
 .wrapper {
-  max-width: 450px;
+  max-width: 410px;
   margin: 0 auto;
   padding: 15px;
 }
 
 .title {
   text-align: center;
+  color: white;
+}
+
+#calculator {
+  padding: 20px;
+  background-color: #17171C;
+  border: 2px solid #fff;
+  border-radius: 24px;
+}
+
+#theme-button {
+  width: 65px;
+  margin: 0 auto;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 4px;
+  border-radius: 25px;
+  background-color: #2E2F38;
+}
+
+.theme-button__circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #4E505F;
+}
+
+#operation-field, 
+#operation-result {
+  text-align: right;
+}
+
+#operation-field {
+  margin-top: 55px;
+
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#operation-result {
+  margin-top: 16px;
+
+  color: white;
+  font-weight: 300;
+  font-size: 5rem;
+}
+
+#calculator-buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#additional-operations {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+#additional-operations > button {
+  background-color: #4E505F;
+}
+
+#main-operations {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#main-operations > button {
+  background-color: #4B5EFC;
+}
+
+#numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+#numbers > button {
+  background-color: #2E2F38;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#numbers-footer {
+  display: flex;
+  gap: 16px;
+}
+
+#numbers-footer > button {
+  background-color: #2E2F38;
+}
+
+
+.hidden {
+  display: none;
 }
