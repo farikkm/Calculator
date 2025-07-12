@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.title {
+  text-align: center;
+}
