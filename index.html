@@ -12,15 +12,15 @@
   <title>Calculator</title>
 </head>
 
-<body>
+<body class="dark">
 
   <div class="wrapper">
     <h1 class="title">Calculator</h1>
 
     <div id="calculator">
       <div id="theme-button">
-        <div class="theme-button__circle"></div>
         <img id="light-icon" class="hidden" src="./icons/sun.svg" alt="sun-icon">
+        <div class="theme-button__circle"></div>
         <img id="dark-icon" src="./icons/moon.svg" alt="moon-icon">
       </div>
 
@@ -31,7 +31,6 @@
           <div id="additional-operations">
             <button data-value="eraseAll">C</button>
             <button data-value="convert">
-              <img src="./icons/plus-minus.svg" alt="plus-minus-svg">
             </button>
             <button data-value="percentage">%</button>
           </div>
@@ -50,7 +49,6 @@
             <button data-value=".">.</button>
             <button data-value="0">0</button>
             <button data-value="backspace">
-              <img src="./icons/backspace.svg" alt="backspace-icon">
             </button>
           </div>
         </div>
@@ -72,6 +70,7 @@
 
 
   <script type="module" src="./scripts/main.js"></script>
+  <script type="module" src="./scripts/modules/toggleTheme.js"></script>
 </body>
 
 </html>

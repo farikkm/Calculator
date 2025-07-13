@@ -10,6 +10,10 @@ body {
   background-color: #17171C;
 }
 
+body.light {
+  background-color: #fff;
+}
+
 button {
   width: 72px;
   height: 72px;
@@ -42,11 +46,20 @@ button {
   color: white;
 }
 
+body.light .title {
+  color: black;
+}
+
 #calculator {
   padding: 20px;
   background-color: #17171C;
   border: 2px solid #fff;
   border-radius: 24px;
+}
+
+body.light #calculator {
+  background-color: #F1F2F3;
+  border: 2px solid black;
 }
 
 #theme-button {
@@ -61,6 +74,12 @@ button {
   padding: 4px;
   border-radius: 25px;
   background-color: #2E2F38;
+
+  user-select: none;
+}
+
+body.light #theme-button {
+  background-color: #fff;
 }
 
 .theme-button__circle {
@@ -68,6 +87,10 @@ button {
   height: 24px;
   border-radius: 50%;
   background-color: #4E505F;
+}
+
+body.light .theme-button__circle {
+  background-color: #D2D3DA;
 }
 
 #display {
@@ -79,10 +102,18 @@ button {
   font-size: 5rem;
 }
 
+body.light #display {
+  color: black;
+}
+
 #calculator-buttons {
   margin-top: 16px;
   display: flex;
   gap: 16px;
+}
+
+body.light #calculator-buttons button {
+  color: black;
 }
 
 #additional-operations {
@@ -95,6 +126,30 @@ button {
   background-color: #4E505F;
 }
 
+button[data-value="convert"] {
+  background-image: url("../icons/plus-minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.light button[data-value="convert"] {
+  background-image: url("../icons/plus-minus-dark.svg");
+}
+
+button[data-value="backspace"] {
+  background-image: url("../icons/backspace.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.light button[data-value="backspace"] {
+  background-image: url("../icons/backspace-dark.svg");
+}
+
+body.light #additional-operations>button {
+  background-color: #D2D3DA;
+}
+
 #main-operations {
   display: flex;
   flex-direction: column;
@@ -105,6 +160,10 @@ button {
   background-color: #4B5EFC;
 }
 
+body.light #main-operations>button {
+  color: #fff;
+}
+
 #numbers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -113,6 +172,10 @@ button {
 
 #numbers>button {
   background-color: #2E2F38;
+}
+
+body.light #numbers>button {
+  background-color: #fff;
 }
 
 .left-side {
@@ -130,9 +193,17 @@ button {
   background-color: #2E2F38;
 }
 
+body.light #numbers-footer>button {
+  background-color: #fff;
+}
+
 
 .hidden {
   display: none;
+}
+
+.show {
+  display: block;
 }
 
 .transparent {
