@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="./icons/logo.svg" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
   <link rel="stylesheet" href="./styles/main.css">
   <title>Calculator</title>
 </head>
@@ -29,36 +32,31 @@
         <img id="light-icon" class="hidden" src="./icons/sun.svg" alt="sun-icon">
         <img id="dark-icon" src="./icons/moon.svg" alt="moon-icon">
       </div>
-      <link
-        href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-        rel="stylesheet" />
-      <div id="operation-field">
-        6,291÷5
+      <div class="transparent" id="operation-field">
       </div>
 
       <div id="operation-result">
-        1,258.2
       </div>
 
       <div id="calculator-buttons">
         <div class="left-side">
           <div id="additional-operations">
-            <button>C</button>
+            <button data-value="eraseAll">C</button>
             <button>
               <img src="./icons/plus-minus.svg" alt="plus-minus-svg">
             </button>
             <button>%</button>
           </div>
           <div id="numbers">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
           </div>
           <div id="numbers-footer">
             <button>.</button>
@@ -71,11 +69,11 @@
 
         <div class="right-side">
           <div id="main-operations">
-            <button>/</button>
-            <button>*</button>
-            <button>-</button>
-            <button>+</button>
-            <button>=</button>
+            <button data-value="divide">/</button>
+            <button data-value="multiply">*</button>
+            <button data-value="minus">-</button>
+            <button data-value="plus">+</button>
+            <button data-value="result">=</button>
           </div>
         </div>
 

@@ -73,15 +73,16 @@ button {
   text-align: right;
 }
 
-#operation-field {
-  margin-top: 55px;
+#operation-field { margin-top: 55px; }
 
+#operation-field._active {
   font-size: 2.5rem;
   font-weight: 200;
   color: rgba(255, 255, 255, 0.4);
 }
 
-#operation-result {
+#operation-result,
+#operation-field {
   margin-top: 16px;
 
   color: white;
@@ -92,7 +93,7 @@ button {
 #calculator-buttons {
   margin-top: 16px;
   display: flex;
-  justify-content: space-between;
+  gap: 16px;
 }
 
 #additional-operations {
@@ -143,4 +144,8 @@ button {
 
 .hidden {
   display: none;
+}
+
+.transparent {
+  opacity: 0;
 }
